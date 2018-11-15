@@ -111,7 +111,7 @@ li:not(:last-child) {
   margin-bottom: 20px;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 500px) {
   nav {
     top: 0;
     right: 0;

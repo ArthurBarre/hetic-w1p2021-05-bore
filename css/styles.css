@@ -134,8 +134,6 @@ footer {
   font-size: 0.8em;
 }
 
-
-
 a{
   display:block;
   text-decoration: none;
@@ -148,5 +146,11 @@ a{
   display: flex;
   flex-direction: row;
 }
-
+.actu {
+  display: flex;
+  flex-direction: row;
+} 
+article {
+  width: 50vw;
+} 
 }
