@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+*{
+  box-sizing: border-box;
+}
+
+/*pour les 3 pages produits*/
+
+main{
+  margin-top: 60px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 4px 0px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  background-color: white;
+}
+
+.logo{
+  height: 100%;
+}
+
+ul{
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+}
+
+li{
+  display: flex;
+  font-size: 18px;
+  font-family: 'Pacifico';
+}
+
+.parallaxe-cocopops{
+  background-image: url(../media/parallaxe-c.png);
+}
+
+.parallaxe-frosties{
+  background-image: url(../media/parallaxe-f.png);
+}
+
+.parallaxe-specialk{
+  background-image: url(../media/parallaxe-sk.png);
+}
+
+.banner{
+  width: 100vw;
+}
+
+.partie {
+  display: flex;
+  justify-content: center;
+}
+.slogan{
+  padding: 15px 0px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-family: 'Pacifico';
+  margin: 30px;
+  text-align: center;
+}
+
+.slogan-tablet{
+  display: none;
+}
+
+.boite-cereal{
+  display: block;
+  margin: 20px auto 20px auto;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.content-intro{
+  text-align: justify;
+  margin: 20px 40px;
+  padding: 15px;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: white;
+}
+
+
+
+.info-nutri{
+  padding: 15px 0px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-family: 'Pacifico';
+  margin: 10px;
+}
+
+.subtitle{
+  font-size: 17px;
+  font-family: 'Pacifico';
+  text-align: center;
+  text-decoration: underline;
+  margin: 25px;
+  padding: 10px;
+  background-color: white;
+  width: 150px;
+  margin: auto;
+}
+
+.ingredient-name{
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Pacifico';
+  line-height: 25px;
+  background-color: white;
+}
+
+.img-ingredient{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.pourcentage{
+  font-size: 16px;
+}
+
+.autre-ingredient{
+  font-size: 14px;
+  font-family: 'Pacifico';
+  text-align: center;
+  line-height: 25px;
+  padding: 15px;
+  background-color: white;
+}
+
+.vitamine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  justify-content: center;
+}
+
+.vitamine-b{
+  margin: auto;
+  padding: 10px;
+  width: 220px;
+  border-radius: 20px;
+}
+
+.vitamine-d{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.rond-vitamine{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin: 17px;
+  background-color: white;
+}
+
+.text-vitamine{
+  color: white;
+  font-size: 15px;
+  font-family: 'Pacifico';
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-vitamine-b, .info-vitamine-d{
+  font-size: 14px;
+  font-family: 'Pacifico';
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px; 
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.info-vitamine-d {
+  margin-bottom: 20px;
+}
+
+.info-vitamine-b {
+  line-height: 25px;
+}
+
+footer {
+  height: 50px;
+  background-color: #D9D1D1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+/*pour la page cocopops*/
+
+.color-cocopops-bg {
+  background-color: #773C29;
+}
+
+.color-cocopops-text {
+  color: #773C29;
+}
+
+/*pour la page spécial k*/
+
+.plus {
+  font-size: 2em;
+  font-family: 'Pacifico';
+  color: #8F2124;
+}
+
+.color-specialk-bg {
+  background-color: #8F2124;
+}
+
+.color-specialk-text {
+  color: #8F2124;
+}
+
+/*pour la page frosties*/
+
+.color-frosties-bg{
+  background-color: #01249B;
+}
+
+.color-frosties-text{
+  color: #01249B;
+}
+
+@media(min-width:500px){
+
+  .slogan{
+    width: 450px
+  }
+
+  .img-ingredient{
+    display: flex;
+    width: 70%;
+    height: 70%;
+  }
+
+  .ingredient{
+    display: inline-block;
+  }
+
+  .list-ingredient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vitamine{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tablet-ing{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tablet-vit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px;
+  }
+
+}
+
+@media(min-width:850px){
+
+  .slogan-mobile{
+    display: none;
+  }
+
+  .slogan-tablet{
+    display: inline;
+  }
+
+  .introduction{
+    display: flex;
+    margin: 50px;
+  }
+
+  .content-intro{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  .slogan-tablet{
+    justify-content: flex-start;
+  }
+
+  .slogan{
+    margin: 0 0 30px 0;
+  }
+
+}
+
+@media(min-width:950px){
+
+    .list-ingredients{
+      display: flex;
+      justify-content: center;
+    }
+
+    .tablet-ing{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .vitamine{
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .vitamine-b, .vitamine-d {
+      margin: auto;
+      display: flex;
+      padding: 20px;
+    }
+
+    .vitamine-b{
+      width: 600px;
+      display: flex;
+      justify-content: space-around;
+    }
+}
+
+/*coded by leadmrn*/

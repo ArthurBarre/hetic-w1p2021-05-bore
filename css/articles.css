@@ -1,0 +1,166 @@
+*{
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+header{
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 4px 0px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  background-color: white;
+}
+
+.logo{
+  height:100%;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+}
+ 
+li{
+  font-size: 1.2em;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.content-article {
+  position: fixed; 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(90px);  
+}
+.text-logistic {
+  position: relative;
+  background-color: #fff;
+  width: 460px;
+  height: 600px;
+  justify-content: flex-end;
+  margin-bottom: 110px;
+  padding: 30px;
+  box-shadow: 0px 2px 4px 0px gray;
+  border-radius: 5%;
+  opacity: 0.9;
+  
+}
+.text-overwatch {
+  position: relative;
+  background-color: #fff;
+  width: 460px;
+  height: 600px;
+  justify-content: flex-end;
+  margin-bottom: 110px;
+  padding: 30px;
+  box-shadow: 0px 2px 4px 0px gray;
+  border-radius: 5%;
+  opacity: 0.9;
+}
+h1, li {
+  font-size: 20px;
+  font-family: "Pacifico";
+  font-weight: bold;
+  font-style: normal;
+}
+p {
+  text-indent: 4%;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif
+}
+.logistic {
+  background-image: url("../media/s-logistique-15.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.overwatch {
+  background-image: url("../media/lucio.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.images-logistic img{
+  width: 15%;
+}
+.barren {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  z-index: 99;
+  bottom: -34px;
+  right: -53px;
+}
+.barref {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  z-index: 99;
+  bottom: -60px;
+  left: -60px;
+  transform: rotate(45deg);
+}
+.barrec {
+  position: absolute;
+  height: 25%;
+  width: auto;
+  z-index: 99;
+  top: -60px;
+  left: -60px;
+  transform: rotate(-45deg);
+}
+.OW {
+  position: absolute;
+  height: 30%;
+  width: auto;
+  z-index: 99;
+  bottom: 40px;
+  left: 60px;
+}
+
+footer {
+  height: 50px;
+  background-color: #D9D1D1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+@media (max-width:500px){
+  .text-logistic{
+    transform:scale(0.7);
+  }
+  .text-overwatch{
+    transform:scale(0.7);
+  }
+}
+@media (max-width:440px){
+  .text-logistic{
+    height: 700px;
+  }
+  .text-logistic img {
+    height: 20%;
+  }
+  .OW {
+    left: 30px;
+  }
+}
+@media (max-width:350px){
+  .text-logistic{
+    height: 800px;
+  }
+  .OW {
+    left: 20px;
+  }
+}
